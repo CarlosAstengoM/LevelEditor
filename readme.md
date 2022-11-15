@@ -6,7 +6,7 @@ Carlos Astengo
 ## Synopsis
 ---------------
 This is a sorry attempt on creating a level editor that will later be used to 
-create an angy birds clone.
+create an angry birds clone.
 
 ## License
 ---------------

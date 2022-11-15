@@ -1,0 +1,45 @@
+/* Copyright (c) Carlos Astengo 2022, All rights reserved */
+
+.editor-area {
+    background-image: url("../Images/Backgrounds/background-forest.jpg");
+    background-size: 100% 100%;
+    height: 720px;
+    width: 1280px;
+    overflow: hidden;
+    position:relative;
+}
+
+.input-field
+{
+    width: 200px;
+    height: 20px;
+    font-size: 1rem;
+}
+
+.dirt-block
+{
+    background-image: url("../Images/Textures/dirt-texture.png");
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.rock-block
+{
+    background-image: url("../Images/Textures/rock-texture.png");
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.placed 
+{
+    position: absolute;
+    overflow: hidden;
+}
+
+label
+{
+    font-size: 1rem;
+}
+

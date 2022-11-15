@@ -1,0 +1,21 @@
+{
+  "name": "level-editor",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "node --inspect ./server.js",
+    "debug": "nodemon --inspect ./server.js"
+  },
+  "author": "Carlos Astengo",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "fs-extra": "^10.1.0",
+    "http": "^0.0.1-security",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  }
+}

@@ -1,0 +1,120 @@
+<!-- Copyright (c) Carlos Astengo 2022, All rights reserved -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/Css/style-base.css">
+    <link rel="stylesheet" href="/Css/style-grid.css">
+    <link rel="stylesheet" href="/Css/style.css">
+
+    <script src="/JS/jquery-3.6.1.min.js"></script>
+
+    <title>Level Editor</title>
+
+</head>
+
+
+<body>
+    
+    <main class="grid-wrapper">
+
+        <div class="grid-wrapper">
+            <div class="grid-gutter-left">
+                <form id="level-inspector">
+                    <div>
+                        <label>Level Name</label>
+                        <input class="input-field" type="text">
+                    </div>
+
+                    <div>
+                        <label>Max Shots</label>
+                        <input class="input-field" type="text">
+                    </div>
+                    
+                    <div>
+                        <label>Background Image</label>
+                        <input class="input-field" type="text">
+                    </div>
+
+                    <div>
+                        <label>One Star Score</label>
+                        <input class="input-field" type="text">
+                    </div>
+
+                    <div>
+                        <label>Two Star Score</label>
+                        <input class="input-field" type="text">
+                    </div>
+
+                    <div>
+                        <label>Three Star Score</label>
+                        <input class="input-field" type="text">
+                    </div>
+                    
+                    <input id="save-level" type="submit" value="Save">
+                    
+                </form>
+
+                <form id="level-selector">
+                    <label>Level Name</label>
+                    <input class="input-field" type="text">
+                    <input id="load-level" type="submit" value="Load">
+                </form>
+                
+            </div>
+        </div>
+
+        <div  class="grid-gutter-right">
+
+            <div id="prefab-list" class="grid-row-foot">
+                <ul>
+                    <li>
+                        <div class="dirt-block prefab draggable" draggable="true" id="dirt-block">                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="rock-block prefab draggable" draggable="true" id="rock-block">                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <form id="object-inspector">
+                <label>Object Name</label>
+                <input class="input-field" type="text">
+                <label>Height</label>
+                <input class="input-field" type="text">
+                <label>Width</label>
+                <input class="input-field" type="text">
+                <label>Texture</label>
+                <input class="input-field" type="text">
+                <label>Mass</label>
+                <input class="input-field" type="text">
+                <label>Bounciness</label>
+                <input class="input-field" type="text">
+                <label>Friction</label>
+                <input class="input-field" type="text">
+
+                <input id="save-object" type="submit" value="Save">
+                <input id="revert-object" type="submit" value="Revert">
+            </form>
+
+        </div>
+
+        <div class="editor-area grid-row-main grid-column-main" id="game-editor">
+
+        </div>
+
+    </main>
+
+    <script type="module" src="/JS/Client/index.js"></script>
+
+</body>
+
+</html>
